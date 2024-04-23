@@ -1,0 +1,38 @@
+Aita teha mul eventListener ja funktsioon kui see checkbox on checked 
+<label class="checkbox_container"><p>Show weekday</p>
+       <input type="checkbox" checked="checked">
+       <span class="checkmark"></span>
+</label>
+
+siis "day" on display: none;
+<div id="day">Tänane nädalapäev</div>
+
+ChatGPT
+
+Jah, kindlasti! Saad teha selle ülesande jaoks järgmise JavaScripti koodi:
+
+javascript
+
+// Leia checkbox elemendi DOM
+const checkbox = document.querySelector('.checkbox_container input[type="checkbox"]');
+
+// Leia day elemendi DOM
+const dayElement = document.getElementById('day');
+
+// Lisa event listener checkboxile
+checkbox.addEventListener('change', function() {
+    // Kontrolli kas checkbox on checked või mitte
+    if (this.checked) {
+        // Kui checkbox on checked, peida day element
+        dayElement.style.display = 'none';
+    } else {
+        // Kui checkbox ei ole checked, näita day elementi
+        dayElement.style.display = 'block'; // Või muu soovitud display väärtus, näiteks 'inline-block'
+    }
+});
+
+Selles koodis jälgib eventListener checkboxi muudatusi ja käivitab vastavalt funktsiooni, mis peidab või näitab päeva elementi sõltuvalt checkboxi olekust.
+
+
+
+// Vestlusest sain nii palju abi, et oskasin iseseisvalt edasi teha järgnevad vajalikud funktsioonid.

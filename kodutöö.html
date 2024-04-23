@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="clock.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <title>Kell</title>
+</head>
+<body>
+    <div class="autor">
+        <p>Autor: Elika Laur</p>
+    </div>
+
+    <div class="custom_menu">
+        <div class="dropdown">
+            <button class="dropbtn">Customize clock style</button>
+            <div class="dropdown-content">
+                <label class="checkbox_container">
+                    <p>Show weekday</p>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox_container">
+                    <p>Show year</p>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox_container">
+                    <p>Show only clock</p>
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox_container">
+                    <p>Dark theme</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox_container">
+                    <p>Big Text</p>
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox_container">
+                    <p>Small Text</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+               
+            </div>
+          </div>
+    </div>
+
+    <div class="container">    
+        <div id="clockContainer">
+            <div id="day"><h2>Tänane nädalapäev</h2></div>
+            <div id="clock">
+                <div id="hoursElement">tunnid</div>
+                <div id="minutesElement">minutid</div>
+                <div id="secondsElement">sekundid</div>
+            </div>
+            <div id="dateElement">
+                <div id="dayElement">kuupäev</div>
+                <div id="monthElement">kuu</div>
+                <div id="yearElement">aasta</div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
