@@ -1,3 +1,11 @@
+# Kodutöö 1
+It is an electronic clock, on this clock you can change six attributes according to your wishes: Show the day of the week, show the year, show only the time, dark theme, make the text font bigger, make the text font smaller.
+
+![image](https://github.com/Elikala/kodutoo-1/assets/92163033/7d22403f-b5a6-40f2-8b83-b50c913af4fb)
+
+
+
+
 # kodutoo-1
 Esimene kodutöö
 
